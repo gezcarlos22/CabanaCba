@@ -127,7 +127,8 @@ const Featured = () => {
   }, [])
 
   return (
-    <section className="relative bg-deepSlate dark:bg-darkmode  after:absolute after:w-1/4 after:h-1/4  after:top-72 after:right-0 after:bg-no-repeat">
+    <>
+    <div className="relative bg-deepSlate dark:bg-darkmode  after:absolute after:w-1/4 after:h-1/4  after:top-72 after:right-0 after:bg-no-repeat mt-10">
       <div className='container mx-auto max-w-7xl px-4 relative'>
         <Slider {...settings}>
           {loading
@@ -189,7 +190,8 @@ const Featured = () => {
           </div>
         </div>
       )}
-    </section>
+    </div>
+  </>
   )
 }
 export default Featured

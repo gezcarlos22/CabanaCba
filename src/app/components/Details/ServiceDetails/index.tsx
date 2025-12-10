@@ -1,11 +1,10 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { aboutdata } from '@/app/types/aboutdata'
-import Link from 'next/link'
 import Image from 'next/image'
 import AboutSkeleton from '../../Skeleton/AboutUs'
 
-const Aboutus = () => {
+const ServiceDetails = () => {
   // fetch about data
   const [about, setAbout] = useState<aboutdata[]>([])
   const [loading, setLoading] = useState(true)
@@ -16,7 +15,7 @@ const Aboutus = () => {
         const res = await fetch('/api/data')
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
-        setAbout(data.Aboutdata)
+        setAbout(data.ServiceData)
       } catch (error) {
         console.error('Error fetching services:', error)
       } finally {
@@ -27,7 +26,7 @@ const Aboutus = () => {
   }, [])
 
   return (
-    <section id='Servicios' className=' bg-cover bg-center overflow-hidden'>
+    <section id='ServiciosDetails' className=' bg-cover bg-center overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4 relative z-1'>
         <div className='p-12 bg-cover bg-center bg-no-repeat rounded-3xl' style={{backgroundImage: 'url(/images/aboutus/img_rio1.jpg)'}}>
           <div className='mx-auto py-2 px-5 bg-primary/15 rounded-full w-fit'>
@@ -35,7 +34,6 @@ const Aboutus = () => {
               servicios
             </p>
           </div>
-          <h2 className='text-center pb-12 text-white'>Nuestro compromiso con usted.</h2>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-10'>
             {loading
               ? Array.from({ length: 3 }).map((_, index) => (
@@ -66,17 +64,10 @@ const Aboutus = () => {
                   </div>
                 ))}
           </div>
-          <div className='text-center mt-10'>
-              <Link
-                  href='/cabana/#ServiciosDetails'
-                  className='text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full duration-300 bg-primary border border-primary hover:bg-darkmode hover:border-darkmode'>
-                  CONOCE MÁS
-              </Link>
-            </div>
         </div>
       </div>
     </section>
   )
 }
 
-export default Aboutus
+export default ServiceDetails

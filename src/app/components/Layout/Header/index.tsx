@@ -66,7 +66,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 z-40 w-full transition-all duration-300 ${
-        sticky ? ' shadow-lg bg-black' : 'shadow-none'
+        sticky ? ' shadow-lg bg-black/90' : 'shadow-none'
       }`}>
       <div className='lg:py-0 py-2'>
         <div className='container mx-auto max-w-(--breakpoint-xl) flex items-center justify-between px-4'>

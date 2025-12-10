@@ -16,7 +16,7 @@ import Insta from '@/app/components/Home/Insta'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cabaña Arroyo los patos',
+  title: 'Cabaña Traslasierra',
 }
 
 export default function Home() {

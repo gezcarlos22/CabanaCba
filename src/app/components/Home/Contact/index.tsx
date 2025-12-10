@@ -70,7 +70,7 @@ const ContactForm = () => {
       })
   }
   return (
-    <section id='contact'>
+    <div id='contact'>
       <div className='container'>
         <div className='relative'>
           <div className='flex flex-col lg:flex-row gap-8'>
@@ -168,7 +168,7 @@ const ContactForm = () => {
             </div>
             <div className='lg:w-1/2'>
               <iframe
-                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841374707886!2d-73.98823492346679!3d40.75889797138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1ses!2sus!4v1234567890123!5m2!1ses!2sus'
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3392.578578790391!2d-65.00395391191532!3d-31.75470199227001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQ1JzE2LjkiUyA2NcKwMDAnMDkuMiJX!5e0!3m2!1ses-419!2sus!4v1765389037844!5m2!1ses-419!2sus"
                 width='100%'
                 height='100%'
                 style={{ border: 0, minHeight: '500px', borderRadius: '1rem' }}
@@ -179,7 +179,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -7,6 +7,7 @@ import { featureddata } from '@/app/types/featureddata'
 import { testimonials } from '@/app/types/testimonials'
 import { articles } from '@/app/types/articles'
 import { footerlinks } from '@/app/types/footerlinks'
+import { herodata } from '@/app/types/herodata'
 
 // header nav-links data
 const headerData: HeaderItem[] = [
@@ -20,6 +21,93 @@ const headerData: HeaderItem[] = [
 
 // about data
 const Aboutdata: aboutdata[] = [
+  {
+    heading: 'Área de Asador',
+    imgSrc: '/images/aboutus/asador.png',
+    paragraph:
+      'Sector de parrilla completamente equipado, ideal para disfrutar de un auténtico asado argentino al aire libre.',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Piscina',
+    imgSrc: '/images/aboutus/picina.png',
+    paragraph:
+      'Disfrute de nuestra piscina con temperatura agradable, perfecta para refrescarse y relajarse después de una caminata.',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Espacios Exteriores',
+    imgSrc: '/images/aboutus/exterior.png',
+    paragraph:
+      'Galería con cómodos sillones y mesas para disfrutar de sus comidas o el atardecer con vistas a la sierra.',
+    link: 'Learn more',
+  },
+]
+
+const ServiceData: aboutdata[] = [
+  {
+    heading: '4 a 5 Personas',
+    imgSrc: '/images/service/cabaña.png',
+    paragraph:
+      'Cabaña ideal para grupos familiares o de amigos, diseñada para un máximo confort.',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Dormitorios',
+    imgSrc: '/images/service/cama.png',
+    paragraph:
+      'Distribución de camas: una (1) cama matrimonial, dos (2) camas individuales de 1 plaza y un sofá/cama adicional.',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Baño Completo',
+    imgSrc: '/images/service/baño.png',
+    paragraph:
+      'Un (1) baño moderno y funcional, equipado con todas las comodidades',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Ropa Blanca de Primera',
+    imgSrc: '/images/service/ropa.png',
+    paragraph:
+      'Proveemos sábanas de algodón y toallas suaves de alta calidad para cada huésped.',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Vajilla Completa',
+    imgSrc: '/images/service/vajilla.png',
+    paragraph:
+      'Cocina totalmente equipada con vajilla y utensilios necesarios para 5 personas.',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Juegos de Mesa y Cartas',
+    imgSrc: '/images/service/cartas.png',
+    paragraph:
+      'Una selección de juegos para disfrutar de momentos de diversión y conexión en familia o entre amigos',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Wi-Fi de Alta Velocidad',
+    imgSrc: '/images/service/wifi.png',
+    paragraph:
+      'Conexión estable y gratuita para planificar sus excursiones o simplemente disfrutar de su contenido favorito.',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Smart TV con Plataformas',
+    imgSrc: '/images/service/tv.png',
+    paragraph:
+      'Televisor con acceso a internet para que pueda utilizar sus cuentas de streaming (Netflix, YouTube, etc.)',
+    link: 'Learn more',
+  },
+  {
+    heading: 'Estacionamiento',
+    imgSrc: '/images/service/auto.png',
+    paragraph:
+      'Contamos con espacio seguro y techado dentro del predio para resguardar su vehículo durante toda su estadía.',
+    link: 'Learn more',
+  },
   {
     heading: 'Área de Asador',
     imgSrc: '/images/aboutus/asador.png',
@@ -265,6 +353,22 @@ const FooterLinksData: footerlinks[] = [
   },
 ]
 
+
+export const HeroData: herodata[] = [
+  {
+    section: 'Cabaña',
+    desc: 'CABAÑA',
+    title: 'Tu Refugio de Relax Junto al Río en Arroyo de Los Patos.',
+    video:'/images/hero/video_cabaña.mp4'
+  },
+  {
+    section: 'Mina Clavero',
+    desc: 'Mina Clavero',
+    title: 'El Secreto Mejor Guardado de Traslasierra para Familias y Amigos',
+    video:'/images/hero/video_cabaña.mp4'
+  },
+]
+
 export const GET = () => {
   return NextResponse.json({
     headerData,
@@ -275,5 +379,7 @@ export const GET = () => {
     TestimonialsData,
     ArticlesData,
     FooterLinksData,
+    HeroData,
+    ServiceData
   })
 }

@@ -49,10 +49,10 @@ const Dedicated = () => {
             <p className='text-xl font-medium text-black mt-5 text-center lg:text-start'>
               Su ubicación es estratégica, a minutos de las ciudades más grandes como Mina Clavero y Nono, combinando así la serenidad de la naturaleza con la cercanía a centros turísticos.
             </p>
-            <div className='text-center mt-10'>
+            <div className='text-center lg:text-start my-10'>
               <Link
                   href='#'
-                  className='text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full duration-300 bg-primary border border-primary hover:bg-darkmode hover:border-darkmode'>
+                  className='text-xl py-5 px-14 my-5 font-semibold text-white rounded-full duration-300 bg-primary border border-primary hover:bg-darkmode hover:border-darkmode'>
                   CONOCE MÁS
               </Link>
             </div>

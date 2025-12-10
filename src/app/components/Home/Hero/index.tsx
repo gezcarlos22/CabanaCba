@@ -18,7 +18,7 @@ const Hero = () => {
   }
 
   return (
-    <section className='relative overflow-hidden z-1' id='Inicio'>
+    <section className='relative overflow-hidden z-1 h-screen w-full' id='Inicio'>
       <video
         className='absolute top-0 left-0 w-full h-full object-cover z-[-1]'
         autoPlay
