@@ -19,7 +19,7 @@ const Beliefs = () => {
                 Sabores, Cultura y Encanto Artesanal
               </h3>
               <Link
-                href='#'
+                href='/destinos/villa-las-rosas'
                 className='text-xl py-5 px-14 font-semibold text-white rounded-full duration-300 bg-primary border border-primary hover:bg-darkmode hover:border-darkmode'>
                 CONOCE MÁS
               </Link>
@@ -37,7 +37,7 @@ const Beliefs = () => {
                 <span className='text-primary'>Villa Dolores: </span>Compras, Historia y el Polo Comercial
               </h3>
               <Link
-                href='#'
+                href='/destinos/villa-dolores'
                 className='text-xl py-5 px-14 font-semibold text-white rounded-full duration-300 bg-primary border border-primary hover:bg-darkmode hover:border-darkmode'>
                 CONOCE MÁS
               </Link>

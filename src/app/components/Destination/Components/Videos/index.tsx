@@ -13,9 +13,11 @@ const Videos = ({ videos, title = 'VIDEOS', subtitle = 'Explora en video' }: Vid
     <section className="py-16 px-4">
       <div className='max-w-6xl mx-auto'>
         <div className='text-center mb-12'>
-          <p className='text-primary text-xl font-normal tracking-widest'>
-            {title}
-          </p>
+          <div className='mx-auto py-2 px-5 bg-primary/15 rounded-full w-fit'>
+              <p className='text-center text-primary text-lg font-bold tracking-widest uppercase'>
+                {title}
+              </p>
+            </div>
           <h2 className='font-bold mt-4'>{subtitle}</h2>
         </div>
 

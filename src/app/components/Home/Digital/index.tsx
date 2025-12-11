@@ -19,7 +19,7 @@ const Digital = () => {
               </h2>
               <div className='text-center lg:text-start'>
                 <Link
-                  href='#'
+                  href='/destinos/mina-clavero'
                   className='text-xl font-semibold text-white bg-deep-slate/80 hover:bg-deep-slate py-4 px-12 rounded-full'>
                   CONOCE MÁS
                 </Link>

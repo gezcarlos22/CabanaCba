@@ -11,12 +11,22 @@ import { herodata } from '@/app/types/herodata'
 
 // header nav-links data
 const headerData: HeaderItem[] = [
-  { label: 'Inicio', href: '#Inicio' },
-  { label: 'Servicios', href: '#Servicios' },
-  { label: 'Destinos', href: '#Destinos' },
-  { label: 'Preguntas', href: '#FAQ' },
-  { label: 'Testimonios', href: '#testimonial-section' },
-  { label: 'Contacto', href: '#Contacto' },
+  { label: 'Inicio', href: '/' },
+  { label: 'Cabaña', href: '/detalle' },
+  { label: 'Servicios', href: '../#Servicios' },
+  { 
+    label: 'Destinos', 
+    href: '../#Destinos',
+    submenu: [
+      { label: 'Arroyo de los Patos', href: '/destinos/arroyo-de-los-patos' },
+      { label: 'Mina Clavero', href: '/destinos/mina-clavero' },
+      { label: 'Villa Dolores', href: '/destinos/villa-dolores' },
+      { label: 'Villa Las Rosas', href: '/destinos/villa-las-rosas' }
+    ]
+  },
+  { label: 'Preguntas', href: '../#FAQ' },
+  { label: 'Testimonios', href: '../#testimonial-section' },
+  { label: 'Contacto', href: '../#Contacto' },
 ]
 
 // about data
@@ -343,12 +353,13 @@ const FooterLinksData: footerlinks[] = [
   {
     section: 'Menu',
     links: [
-      { label: 'Inicio', href: '#Inicio' },
-      { label: 'Servicios', href: '#Servicios' },
-      { label: 'Destinos', href: '#Destinos' },
-      { label: 'Preguntas', href: '#FAQ' },
-      { label: 'Testimonios', href: '#testimonial-section' },
-      { label: 'Contacto', href: '#Contacto' },
+      { label: 'Inicio', href: '/' },
+      { label: 'Cabaña', href: '/detalle' },
+      { label: 'Servicios', href: '../#Servicios' },
+      { label: 'Destinos', href: '../#Destinos' },
+      { label: 'Preguntas', href: '../#FAQ' },
+      { label: 'Testimonios', href: '../#testimonial-section' },
+      { label: 'Contacto', href: '../#Contacto' },
     ],
   },
 ]

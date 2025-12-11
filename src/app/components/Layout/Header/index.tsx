@@ -86,19 +86,17 @@ const Header: React.FC = () => {
               onClick={() => setNavbarOpen(!navbarOpen)}
               className='block p-2 rounded-lg'
               aria-label='Toggle mobile menu'>
-              <span className='block w-6 h-0.5 bg-darkmode'></span>
-              <span className='block w-6 h-0.5 bg-darkmode mt-1.5'></span>
-              <span className='block w-6 h-0.5 bg-darkmode mt-1.5'></span>
+              <span className='block w-6 h-0.5 bg-white'></span>
+              <span className='block w-6 h-0.5 bg-white mt-1.5'></span>
+              <span className='block w-6 h-0.5 bg-white mt-1.5'></span>
             </button>
           </div>
         </div>
-        {navbarOpen && (
-          <div className='fixed top-0 left-0 w-full h-full bg-white z-40' />
-        )}
+
         <div
           ref={mobileMenuRef}
-          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${
-            navbarOpen ? 'translate-x-0' : 'translate-x-full'
+          className={`lg:hidden fixed top-0 left-0 w-full bg-black shadow-lg transform transition-transform duration-300 ${
+            navbarOpen ? 'translate-y-0' : '-translate-y-full'
           } z-50`}>
           <div className='flex items-center justify-between p-4'>
             <h2 className='text-lg font-bold text-midnight_text dark:text-midnight_text text-white'>
@@ -111,7 +109,7 @@ const Header: React.FC = () => {
               className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
               aria-label='Close menu Modal'></button>
           </div>
-          <nav className='flex flex-col items-start p-4'>
+          <nav className='flex flex-col items-center p-4'>
             {headerData.map(
               (item: HeaderItem, index: Key | null | undefined) => (
                 <MobileHeaderLink key={index} item={item} />

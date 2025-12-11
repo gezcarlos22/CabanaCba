@@ -16,7 +16,7 @@ const Hero2 = ({ data }: Hero2Props) => {
         playsInline>
         <source src={data.video} type='video/mp4' />
       </video>
-      <div className='absolute inset-0 flex items-center justify-center z-10'>
+      <div className='absolute inset-0 flex items-center justify-center z-10 bg-black/50'>
         <div className='text-center px-4'>
           <div className='py-2 px-5 bg-primary/15 rounded-full w-fit mx-auto mb-4'>
             <p className='text-primary text-lg font-bold'>{data.desc}</p>

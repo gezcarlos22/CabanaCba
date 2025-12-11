@@ -40,6 +40,7 @@ export type DestinationData = {
   videos: Video[]
   location: {
     address: string
+    scr:string
     coordinates?: {
       lat: number
       lng: number
@@ -47,4 +48,8 @@ export type DestinationData = {
   }
   bestTimeToVisit: string
   tips: string[]
+  telefono: string
+  email: string
+  instagram: string
+  web: string
 }

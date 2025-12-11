@@ -51,7 +51,7 @@ const Dedicated = () => {
             </p>
             <div className='text-center lg:text-start my-10'>
               <Link
-                  href='#'
+                  href='/destinos/arroyo-de-los-patos'
                   className='text-xl py-5 px-14 my-5 font-semibold text-white rounded-full duration-300 bg-primary border border-primary hover:bg-darkmode hover:border-darkmode'>
                   CONOCE MÁS
               </Link>
@@ -60,7 +60,7 @@ const Dedicated = () => {
           {/* Right Column */}
           <div className='col-span-12 lg:col-span-6 justify-self-center'>
             <Image
-              src='/images/dedicated/cabaña1.jpg'
+              src='/images/destination/arroyo-los-patos/rio-completo.jpg'
               alt='man-icon'
               width={716}
               height={500}

@@ -36,7 +36,7 @@ const Hero = () => {
             <h1>
               Vive el encanto de Traslasierra.
             </h1>
-            <Link href={'#'}>
+            <Link href="/detalle">
               <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer mt-10'>
                 DESCUBRE MÁS
               </button>

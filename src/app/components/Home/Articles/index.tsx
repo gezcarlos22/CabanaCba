@@ -84,9 +84,11 @@ const Articles = ({ activities, title = 'ARTICLES', subtitle = 'Our latest post.
     <section id='Blog' className='relative overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4 relative'>
         <div className='text-center'>
-          <p className='text-primary text-xl font-normal tracking-widest'>
-            {title}
-          </p>
+          <div className='mx-auto py-2 px-5 bg-primary/15 rounded-full w-fit'>
+              <p className='text-center text-primary text-lg font-bold tracking-widest uppercase'>
+                {title}
+              </p>
+            </div>
           <h2>{subtitle}</h2>
         </div>
 
@@ -102,14 +104,16 @@ const Articles = ({ activities, title = 'ARTICLES', subtitle = 'Our latest post.
                   className='bg-white px-3 pt-3 pb-12 shadow-lg rounded-4xl relative cursor-pointer hover:shadow-xl transition-shadow'
                   onClick={() => openModal(activity)}
                 >
-                  <Image
-                    src={activity.image}
-                    alt={activity.name}
-                    width={389}
-                    height={262}
-                    className='inline-block m-auto rounded-3xl'
-                  />
-                  <div className='absolute text-base bg-primary text-white py-3 px-6 rounded-full top-56 right-11'>
+                  <div className='w-full h-64 overflow-hidden rounded-3xl'>
+                    <Image
+                      src={activity.image}
+                      alt={activity.name}
+                      width={389}
+                      height={262}
+                      className='w-full h-full object-cover'
+                    />
+                  </div>
+                  <div className='absolute text-base bg-primary text-white py-3 px-6 rounded-full top-56 right-11 -mt-5'>
                     {activity.duration}
                   </div>
                   <h5 className='font-bold pt-6'>{activity.name}</h5>
@@ -122,17 +126,19 @@ const Articles = ({ activities, title = 'ARTICLES', subtitle = 'Our latest post.
               ))
             : articles.map((items, i) => (
                 <div key={i} className='bg-white px-3 pt-3 pb-12 shadow-lg rounded-4xl relative'>
-                  <Image
-                    src={items.imgSrc}
-                    alt='gaby'
-                    width={389}
-                    height={262}
-                    className='inline-block m-auto rounded-3xl'
-                  />
+                  <div className='w-full h-64 overflow-hidden rounded-3xl'>
+                    <Image
+                      src={items.imgSrc}
+                      alt='gaby'
+                      width={389}
+                      height={262}
+                      className='w-full h-full object-cover'
+                    />
+                  </div>
                   <Link
                     href='/'
                     className='absolute text-base bg-primary text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full top-56 right-11'>
-                    {items.time} read
+                    {items.time}
                   </Link>
                   <h5 className='font-bold pt-6'>{items.heading}</h5>
                   <h5 className='font-bold pt-1'>{items.heading2}</h5>
@@ -189,7 +195,7 @@ const Articles = ({ activities, title = 'ARTICLES', subtitle = 'Our latest post.
                   <div className='mt-6'>
                     <h3 className='text-lg font-semibold mb-2'>Ubicación</h3>
                     <iframe
-                      src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(selectedActivity.location)}`}
+                      src={selectedActivity.location}
                       width='100%'
                       height='300'
                       style={{ border: 0 }}
