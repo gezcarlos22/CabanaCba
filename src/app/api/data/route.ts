@@ -7,7 +7,7 @@ import { featureddata } from '@/app/types/featureddata'
 import { testimonials } from '@/app/types/testimonials'
 import { articles } from '@/app/types/articles'
 import { footerlinks } from '@/app/types/footerlinks'
-import { herodata } from '@/app/types/herodata'
+import { HeroData } from '@/app/data/heroData'
 
 // header nav-links data
 const headerData: HeaderItem[] = [
@@ -365,22 +365,9 @@ const FooterLinksData: footerlinks[] = [
 ]
 
 
-export const HeroData: herodata[] = [
-  {
-    section: 'Cabaña',
-    desc: 'CABAÑA',
-    title: 'Tu Refugio de Relax Junto al Río en Arroyo de Los Patos.',
-    video:'/images/hero/video_cabaña.mp4'
-  },
-  {
-    section: 'Mina Clavero',
-    desc: 'Mina Clavero',
-    title: 'El Secreto Mejor Guardado de Traslasierra para Familias y Amigos',
-    video:'/images/hero/video_cabaña.mp4'
-  },
-]
 
-export const GET = () => {
+
+export async function GET() {
   return NextResponse.json({
     headerData,
     Aboutdata,

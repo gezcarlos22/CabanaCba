@@ -1,7 +1,7 @@
 import Hero2 from '@/app/components/Details/Hero2'
 import Insta from '@/app/components/Home/Insta'
 import { Metadata } from 'next'
-import { HeroData } from '@/app/api/data/route'
+import { HeroData } from '@/app/data/heroData'
 import AboutDetails from '@/app/components/Details/AboutDetails'
 import ServiceDetails from '@/app/components/Details/ServiceDetails'
 import Join from '@/app/components/Home/Joinus'
