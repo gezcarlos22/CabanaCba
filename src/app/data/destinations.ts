@@ -6,7 +6,7 @@ export const destinationsData: DestinationData[] = [
     name: 'Villa Dolores',
     description: 'Compras, Historia y el Polo Comercial',
     heroImage: '/images/destinations/villa-dolores-hero.jpg',
-    heroVideo: '/images/destination/villa-las-rosas/villa-las-rosas-2.mp4',
+    heroVideo: '/videos/villa-dolores.mp4',
     gallery: [
       { src: '/images/destination/villa-dolores/villa-dolores-2.jpg', alt: "Ingreso Villa Dolores" },
       { src: '/images/destination/villa-dolores/basilica-2.jpg', alt: "Basilica Villa Dolores" },
@@ -108,7 +108,7 @@ export const destinationsData: DestinationData[] = [
     name: 'Mina Clavero',
     description: 'Centro de la Aventura y sus Playas de Río',
     heroImage: '/images/destinations/villa-dolores-hero.jpg',
-    heroVideo: '/images/destination/villa-las-rosas/villa-las-rosas-2.mp4',
+    heroVideo: '/videos/mina-clavero.mp4',
     gallery: [
       { src: '/images/destination/mina-clavero/ciudad.jpg', alt: "Ciudad Mina Clavero" },
       { src: '/images/destination/mina-clavero/rio-3.png', alt: "Rio Mina Clavero" },
@@ -210,7 +210,7 @@ export const destinationsData: DestinationData[] = [
     name: 'Villa de Las Rosas',
     description: 'Sabores, Cultura y Encanto Artesanal',
     heroImage: '/images/destinations/villa-dolores-hero.jpg',
-    heroVideo: '/images/destination/villa-las-rosas/villa-las-rosas-2.mp4',
+    heroVideo: '/videos/villa-las-rosas.mp4',
     gallery: [
       { src: '/images/destination/villa-las-rosas/aguita.webp', alt: "Rio Villa de Las Rosas" },
       { src: '/images/destination/villa-las-rosas/paisaje.webp', alt: "Paisaje Villa de Las Rosas" },
@@ -313,7 +313,7 @@ export const destinationsData: DestinationData[] = [
     name: 'Arroyo de los Patos',
     description: 'Sabores, Cultura y Encanto Artesanal',
     heroImage: '/images/destinations/villa-dolores-hero.jpg',
-    heroVideo: '/images/destination/villa-las-rosas/villa-las-rosas-2.mp4',
+    heroVideo: '/videos/arroyo-los-patos.mp4',
     gallery: [
       { src: '/images/destination/arroyo-los-patos/rio.jpg', alt: "Arroyo de los patos" },
       { src: '/images/destination/arroyo-los-patos/rio-2.jpg', alt: "Arroyo de los patos" },

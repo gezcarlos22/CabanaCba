@@ -13,11 +13,20 @@ import Insta from '@/app/components/Home/Insta'
 import { destinationsData } from '@/app/data/destinations'
 import { Metadata } from 'next'
 
+// Fetch activities data
+const getActivitiesData = async () => {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/data`)
+  const data = await res.json()
+  return data.ActivitiesData
+}
+
 export const metadata: Metadata = {
   title: 'Cabaña Traslasierra',
 }
 
-export default function Home() {
+export default async function Home() {
+  const activitiesData = await getActivitiesData()
+  
   return (
     <main>
       <Hero />
@@ -27,7 +36,7 @@ export default function Home() {
       <Digital />
       <Beliefs />
       <Articles 
-        activities={destinationsData[0].activities}
+        activities={activitiesData}
         title="ACTIVIDADES"
         subtitle="Descubre las mejores experiencias"
       />

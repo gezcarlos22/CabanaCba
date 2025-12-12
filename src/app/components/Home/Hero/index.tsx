@@ -25,8 +25,9 @@ const Hero = () => {
         muted
         loop
         playsInline>
-        <source src='/images/hero/video_cabaña.mp4' type='video/mp4' />
+        <source src='/videos/traslasierra.mp4' type='video/mp4' />
       </video>
+      <div className='absolute top-0 left-0 w-full h-full bg-black/50 z-0'></div>
       <div className='container mx-auto pt-24 max-w-7xl px-4 relative z-10'>
         <div className='grid grid-cols-12 justify-center items-center'>
           <div className='col-span-12 xl:col-span-5 lg:col-span-6 md:col-span-12 sm:col-span-12'>
@@ -43,7 +44,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          <div className='absolute -bottom-40 -right-40 xl:block hidden'>
+          <div className='absolute -top-20 -right-40 xl:block hidden'>
                       <Image
                         src='/images/hero/persona3.png'
                         alt='doodle'

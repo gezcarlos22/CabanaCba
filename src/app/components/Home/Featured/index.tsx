@@ -87,9 +87,8 @@ const Featured = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0)
 
   const videos = [
-    '/images/hero/video_cabaña.mp4',
-    '/images/hero/video_cabaña.mp4',
-    '/images/hero/video_cabaña.mp4'
+    '/videos/mina-clavero.mp4',
+    '/videos/villa-dolores.mp4',
   ]
 
   const openModal = (index: number) => {

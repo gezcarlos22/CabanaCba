@@ -64,7 +64,7 @@ const InfoDestinations = ({ destination }: DestinationPageProps) => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-96 rounded-lg shadow-lg"
+                className="w-full h-118 rounded-lg shadow-lg"
               />
             </div>
           </div>

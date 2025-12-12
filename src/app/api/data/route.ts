@@ -32,24 +32,24 @@ const headerData: HeaderItem[] = [
 // about data
 const Aboutdata: aboutdata[] = [
   {
-    heading: 'Área de Asador',
-    imgSrc: '/images/aboutus/asador.png',
+    heading: '4 a 5 Personas',
+    imgSrc: '/images/service/cabaña.png',
     paragraph:
-      'Sector de parrilla completamente equipado, ideal para disfrutar de un auténtico asado argentino al aire libre.',
+      'Cabaña ideal para grupos familiares o de amigos, diseñada para un máximo confort.',
     link: 'Learn more',
   },
   {
-    heading: 'Piscina',
-    imgSrc: '/images/aboutus/picina.png',
+    heading: 'Dormitorios',
+    imgSrc: '/images/service/cama.png',
     paragraph:
-      'Disfrute de nuestra piscina con temperatura agradable, perfecta para refrescarse y relajarse después de una caminata.',
+      'Distribución de camas: una (1) cama matrimonial, dos (2) camas individuales de 1 plaza y un sofá/cama adicional.',
     link: 'Learn more',
   },
   {
-    heading: 'Espacios Exteriores',
-    imgSrc: '/images/aboutus/exterior.png',
+    heading: 'Estacionamiento',
+    imgSrc: '/images/service/auto.png',
     paragraph:
-      'Galería con cómodos sillones y mesas para disfrutar de sus comidas o el atardecer con vistas a la sierra.',
+      'Contamos con espacio seguro y techado dentro del predio para resguardar su vehículo durante toda su estadía.',
     link: 'Learn more',
   },
 ]
@@ -194,6 +194,38 @@ const FeaturedData: featureddata[] = [
     imgSrc: '/images/featured/feat2.jpg',
   },
 ]
+
+//Activities data
+
+const ActivitiesData = [
+      {
+        name: 'Festival Nacional de la Papa',
+        description: 'Del 7 al 12 de enero, Villa Dolores tendrá una programación de primera categoría. Seis noches para disfrutar, cantar y celebrar en nuestro Teatro Griego y Plaza Mitre, con artistas que hacen historia.',
+        image: '/images/destination/villa-dolores/activities/festival-2.jpg',
+        duration: 'Evento',
+        difficulty: 'Fácil',
+        detailedDescription: '¡Villa Dolores se prepara una vez más para ser el epicentro artístico y turístico del oeste cordobés! Sean todos bienvenidos a esta nueva edición del Festival Nacional de la Papa, una celebración cargada de música, baile y tradición. La grilla de artistas garantiza noches inolvidables: el MIÉRCOLES 7 la apertura es a puro cuarteto con la LBC y Euge Quevedo. El JUEVES 8 es la noche de clásicos con la llegada de Abel Pintos, además de las actuaciones de Tranka Style y Grupo Sentires. El SÁBADO 10, el escenario mayor de Traslasierra recibe a Soledad, la voz más emblemática del folklore argentino, junto a Sabor Canela y Juan Zamora. El gran cierre, el LUNES 12, será a puro baile con la energía de Q’ Lokura. Además, el festival ofrece eventos especiales con entrada libre y gratuita: el VIERNES 9 se realizará por primera vez La Peña del Festival en el Teatro Griego, con la presentación de La Terna, Nadia Pereyra, Santiago Simón y La Fórmula. Y el DOMINGO 11, la Plaza Mitre será el escenario de una gran noche de música y baile con Dani Guardia, Gabi Oviedo y Caro Arrieta.',
+        location: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3385.419848540087!2d-65.181992!3d-31.949504799999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942cd4a46749f58d%3A0xc24958fcee8ab810!2sTeatro%20Griego!5e0!3m2!1ses!2sar!4v1765411418599!5m2!1ses!2sar"
+      },
+      {
+        name: 'Feria de Artesanos',
+        description: 'Reúne a artesanos, elaboradores y productores locales, ofreciendo desde comidas naturales y dulces caseros hasta artesanías, sahumerios y espectáculos de música y circo a la gorra.',
+        image: '/images/destination/villa-las-rosas/activities/artesanos.webp',
+        duration: 'Feria',
+        difficulty: 'Fácil',
+        detailedDescription: 'La Feria de Artesanos, Elaboradores y Productores es uno de los atractivos más destacados y queridos de Villa de Las Rosas. Se celebra en la plaza central todos los sábados del año y se extiende a los jueves y sábados durante la temporada de verano. Este encuentro es un festín para los sentidos: se pueden adquirir productos frescos como verduras orgánicas, disfrutar de comidas naturales (o clásicas como pizzas y empanadas) y dulces caseros. El ambiente se completa con el delicioso olor de sahumerios y palo santo, a la vez que es amenizado por grupos de música o espectáculos de circo a la gorra, creando una experiencia de intercambio social y cultural inigualable.',
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.512202899246!2d-65.05421572745068!3d-31.946998427829172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2d5c2b4fe32c1%3A0xf487e603cfd65438!2sVilla%20de%20las%20Rosas!5e0!3m2!1ses-419!2sar!4v1765473786414!5m2!1ses-419!2sar" 
+      },
+      {
+        name: 'Casino Mina Clavero',
+        description: 'La oferta de esparcimiento en Mina Clavero es completa y vibrante. Además de una rica cartelera cultural y gastronómica, la villa cuenta con un renovado Casino y diversas salas de juegos, teatros, cine y discotecas, asegurando diversión y entretenimiento para adultos y familias durante la noche, en todas las estaciones del año.',
+        image: '/images/destination/mina-clavero/activities/casino.jpg',
+        duration: 'Entretenimiento',
+        difficulty: 'Moderado',
+        detailedDescription: 'A la hora de buscar diversión y entretenimiento, Mina Clavero ofrece varias alternativas. El atractivo se centra en su renovado Casino, un punto clave para el esparcimiento adulto que complementa la diversa oferta de la ciudad. Junto a este, la villa dispone de salas de juegos infantiles y parques recreativos, asegurando que toda la familia encuentre una opción de diversión nocturna, sumándose a los teatros, cine y discotecas disponibles en el centro comercial.',
+        location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.6910260246646!2d-65.00400849008973!3d-31.72433407401331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d2677fd9136f1%3A0x51059ba9261e884c!2sCasino%20Provincial%20de%20Mina%20Clavero!5e0!3m2!1ses-419!2sar!4v1765466373730!5m2!1ses-419!2sar",
+      }
+    ]
 
 // plans data
 const PlansData = [
@@ -378,6 +410,7 @@ export async function GET() {
     ArticlesData,
     FooterLinksData,
     HeroData,
-    ServiceData
+    ServiceData,
+    ActivitiesData
   })
 }
