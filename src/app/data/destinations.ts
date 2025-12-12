@@ -407,7 +407,7 @@ export const destinationsData: DestinationData[] = [
       'Prueba las empanadas locales en el centro del pueblo'
     ],
     telefono: '+54 9 3544 542934',
-    email: 'comunarroyodelospatos@yahoo.com.ar',
+    email: 'comunarroyodelospatos @yahoo.com.ar',
     instagram: 'https://www.instagram.com/turismo.arroyodelospatos/',
     web: 'https://www.facebook.com/comunarroyodelospatos'
   },

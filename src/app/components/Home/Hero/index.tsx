@@ -43,7 +43,7 @@ const Hero = () => {
             </Link>
           </div>
 
-          <div className='absolute -bottom-32 -right-40 xl:block hidden'>
+          <div className='absolute -bottom-40 -right-40 xl:block hidden'>
                       <Image
                         src='/images/hero/persona3.png'
                         alt='doodle'
