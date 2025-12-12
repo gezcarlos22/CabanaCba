@@ -167,7 +167,7 @@ const Articles = ({ activities, title = 'ARTICLES', subtitle = 'Our latest post.
               <div className='relative'>
                 <button
                   onClick={closeModal}
-                  className='absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl z-10'
+                  className='absolute top-4 right-4 text-white hover:text-gray-300 text-4xl z-10 bg-black/50 rounded-full w-12 h-12 flex items-center justify-center'
                 >
                   ×
                 </button>

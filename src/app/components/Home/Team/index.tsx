@@ -68,29 +68,29 @@ const Team = () => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className='fixed inset-0 bg-black/90 z-50 flex items-center justify-center'>
+        <div className='fixed inset-0 bg-black/90 z-50 flex items-center justify-center' onClick={closeModal}>
           <button
-            onClick={closeModal}
+            onClick={(e) => { e.stopPropagation(); closeModal(); }}
             className='absolute top-4 right-4 text-white hover:text-gray-300 z-10'
           >
             <Icon icon='mdi:close' width={32} height={32} />
           </button>
           
           <button
-            onClick={prevImage}
+            onClick={(e) => { e.stopPropagation(); prevImage(); }}
             className='absolute left-4 text-white hover:text-gray-300 z-10'
           >
             <Icon icon='mdi:chevron-left' width={48} height={48} />
           </button>
           
           <button
-            onClick={nextImage}
+            onClick={(e) => { e.stopPropagation(); nextImage(); }}
             className='absolute right-4 text-white hover:text-gray-300 z-10'
           >
             <Icon icon='mdi:chevron-right' width={48} height={48} />
           </button>
 
-          <div className='max-w-6xl max-h-full p-4'>
+          <div className='max-w-6xl max-h-full p-4' onClick={(e) => e.stopPropagation()}>
             <Image
               src={images[currentImageIndex]}
               width={1200}

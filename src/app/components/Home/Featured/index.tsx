@@ -72,7 +72,7 @@ const settings = {
     {
       breakpoint: 800,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
       },
@@ -129,58 +129,56 @@ const Featured = () => {
   return (
     <>
     <div className="relative bg-deepSlate dark:bg-darkmode  after:absolute after:w-1/4 after:h-1/4  after:top-72 after:right-0 after:bg-no-repeat mt-10">
-      <div className='container mx-auto max-w-7xl px-4 relative'>
-        <Slider {...settings}>
+      <div className='container mx-auto max-w-7xl relative'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
           {loading
             ? Array.from({ length: 2 }).map((_, index) => (
                 <FeaturedSkeleton key={index} />
               ))
-            : videos.map((videoSrc, i) => (
-                <div key={i}>
-                  <div className='bg-transparent m-3 rounded-3xl'>
-                    <div className='relative group cursor-pointer overflow-hidden rounded-2xl' onClick={() => openModal(i)}>
-                      <video
-                        src={videoSrc}
-                        className='w-full h-[620px] object-cover rounded-2xl'
-                        muted
-                        loop
-                        autoPlay
-                      />
-                      <div className='absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-center justify-center'>
-                        <Icon icon='mdi:play' width={64} height={64} className='text-white' />
-                      </div>
+            : videos.slice(0, 2).map((videoSrc, i) => (
+                <div key={i} className='bg-transparent rounded-3xl'>
+                  <div className='relative group cursor-pointer overflow-hidden rounded-2xl' onClick={() => openModal(i)}>
+                    <video
+                      src={videoSrc}
+                      className='w-full h-[400px] object-cover rounded-2xl'
+                      muted
+                      loop
+                      autoPlay
+                    />
+                    <div className='absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl flex items-center justify-center'>
+                      <Icon icon='mdi:play' width={64} height={64} className='text-white' />
                     </div>
                   </div>
                 </div>
               ))}
-        </Slider>
+        </div>
       </div>
 
       {/* Modal */}
       {isModalOpen && (
-        <div className='fixed inset-0 bg-black/90 z-50 flex items-center justify-center'>
+        <div className='fixed inset-0 bg-black/90 z-50 flex items-center justify-center' onClick={closeModal}>
           <button
-            onClick={closeModal}
+            onClick={(e) => { e.stopPropagation(); closeModal(); }}
             className='absolute top-4 right-4 text-white hover:text-gray-300 z-10'
           >
             <Icon icon='mdi:close' width={32} height={32} />
           </button>
           
           <button
-            onClick={prevVideo}
+            onClick={(e) => { e.stopPropagation(); prevVideo(); }}
             className='absolute left-4 text-white hover:text-gray-300 z-10'
           >
             <Icon icon='mdi:chevron-left' width={48} height={48} />
           </button>
           
           <button
-            onClick={nextVideo}
+            onClick={(e) => { e.stopPropagation(); nextVideo(); }}
             className='absolute right-4 text-white hover:text-gray-300 z-10'
           >
             <Icon icon='mdi:chevron-right' width={48} height={48} />
           </button>
 
-          <div className='max-w-6xl max-h-full p-4'>
+          <div className='max-w-6xl max-h-full p-4' onClick={(e) => e.stopPropagation()}>
             <video
               src={videos[currentVideoIndex]}
               className='w-full h-full object-contain'
