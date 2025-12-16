@@ -89,6 +89,8 @@ const Featured = () => {
   const videos = [
     '/videos/mina-clavero.mp4',
     '/videos/villa-dolores.mp4',
+    '/videos/arroyo-los-patos.mp4',
+    '/videos/villa-las-rosas.mp4',
   ]
 
   const openModal = (index: number) => {
@@ -134,7 +136,7 @@ const Featured = () => {
             ? Array.from({ length: 2 }).map((_, index) => (
                 <FeaturedSkeleton key={index} />
               ))
-            : videos.slice(0, 2).map((videoSrc, i) => (
+            : videos.slice(0, 4).map((videoSrc, i) => (
                 <div key={i} className='bg-transparent rounded-3xl'>
                   <div className='relative group cursor-pointer overflow-hidden rounded-2xl' onClick={() => openModal(i)}>
                     <video

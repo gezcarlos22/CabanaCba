@@ -12,7 +12,7 @@ const Dedicated = () => {
           {/* Left Column */}
           <div className='col-span-12 lg:col-span-6 justify-self-center'>
             <Image
-              src='/images/dedicated/cabaña1.jpg'
+              src='/images/cabaña/frente.jpg'
               alt='man-icon'
               width={716}
               height={500}

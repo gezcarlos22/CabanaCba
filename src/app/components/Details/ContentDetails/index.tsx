@@ -9,12 +9,24 @@ const ContentDetails = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const images = [
-    '/images/team/team.webp',
-    '/images/team/teamimg.png',
-    '/images/dedicated/cabaña1.jpg',
-    '/images/featured/feat1.jpg',
-    '/images/featured/feat2.jpg',
-    '/images/team/team.webp'
+    '/images/cabaña/lateral.jpg',
+    '/images/cabaña/galeria.jpg',
+    '/images/cabaña/picina.jpg',
+    '/images/cabaña/patio.jpg',
+    '/images/cabaña/asador.jpg',
+    '/images/cabaña/comedor.jpg',
+    '/images/cabaña/comedor-2.jpg',
+    '/images/cabaña/cocina.jpg',
+    '/images/cabaña/habitacion1.jpg',
+    '/images/cabaña/habitacion1-2.jpg',
+    '/images/cabaña/habitacion1-3.jpg',
+    '/images/cabaña/habitacion2.jpg',
+    '/images/cabaña/habitacion2-2.jpg',
+    '/images/cabaña/habitacion2-3.jpg',
+    '/images/cabaña/habitacion2-4.jpg',
+    '/images/cabaña/baño.jpg',
+    '/images/cabaña/baño-3.jpg',
+    '/images/cabaña/baño-4.jpg'
   ]
 
   const openModal = (index: number) => {
